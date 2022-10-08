@@ -9,7 +9,7 @@ bluetooth.onBluetoothConnected(function () {
     bluetooth.startAccelerometerService()
     bluetooth.startButtonService()
     bluetooth.startIOPinService()
-    bluetooth.startLEDService()
+    bluetooth.startTemperatureService()
 })
 bluetooth.onBluetoothDisconnected(function () {
     basic.showLeds(`
