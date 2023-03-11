@@ -1,7 +1,7 @@
 bluetooth.onBluetoothConnected(function () {
     basic.showLeds(`
         . # # # .
-        # # . . #
+        # # . # #
         # . # . #
         # . . . #
         . # # # .
@@ -10,6 +10,9 @@ bluetooth.onBluetoothConnected(function () {
     bluetooth.startButtonService()
     bluetooth.startIOPinService()
     bluetooth.startTemperatureService()
+    bluetooth.startLEDService()
+    bluetooth.startMagnetometerService()
+    bluetooth.startUartService()
 })
 bluetooth.onBluetoothDisconnected(function () {
     basic.showLeds(`
