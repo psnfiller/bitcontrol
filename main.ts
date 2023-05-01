@@ -8,11 +8,9 @@ bluetooth.onBluetoothConnected(function () {
         `)
     bluetooth.startAccelerometerService()
     bluetooth.startButtonService()
-    bluetooth.startIOPinService()
-    bluetooth.startTemperatureService()
-    bluetooth.startLEDService()
-    bluetooth.startMagnetometerService()
     bluetooth.startUartService()
+    bluetooth.startIOPinService()
+    bluetooth.startLEDService()
 })
 bluetooth.onBluetoothDisconnected(function () {
     basic.showLeds(`
